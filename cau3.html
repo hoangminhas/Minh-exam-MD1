@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cau 3</title>
+</head>
+<body>
+<script>
+    function isFibonacci(intNum) {
+        let flag = false;
+        let condition1 = Math.sqrt((5 * intNum * intNum) + 4);
+        let condition2 = Math.sqrt((5 * intNum * intNum) - 4);
+
+        while (condition1 > 0 && condition1 % 1 === 0 || condition2 > 0 && condition2 % 1 === 0){
+                flag = true;
+                break;
+        };
+
+        if (flag === true) {
+            return "La so Fibonacci";
+        } else {
+            return "Khong phai so Fibonacci";
+        }
+    }
+
+    console.log(isFibonacci(13));
+
+
+</script>
+</body>
+</html>

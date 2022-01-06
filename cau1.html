@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cau 1</title>
+</head>
+<body>
+<script>
+    function findMax(arr) {
+        let maxScore = arr[0];
+        for (let arrElement of arr) {
+            if (arrElement > maxScore) {
+                maxScore = arrElement;
+            }
+        }
+        return maxScore;
+    }
+
+    console.log(findMax([4,6,8,7.6,9,9.2]));
+</script>
+</body>
+</html>
